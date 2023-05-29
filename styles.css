@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #161D2A;
+    --secondary: #E0EBFE;
+    --accent: #6D9BF5;
+    --black: #000;
+    --white: #fff;
+    --light-gray: #A8A8A8;
+    --gray: #595959;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-color: #f5f7fa;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    background-color: var(--white);
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    position: relative;
+}
+
+.change-language {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 23px;
+}
+
+.language-select {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 6px;
+    appearance: none;
+    cursor: pointer;
+    outline-style: none;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    transition: border 0.4s ease-out;
+}
+
+.language-select:hover {
+    border: 2px solid var(--accent);;
+}
+
+.side-bar {
+    background-color: var(--secondary);
+    width: 370px;
+    padding: 60px 0;
+}
+
+.picture {
+    object-fit: cover;
+}
+
+.about-me-container {
+    padding: 60px 90px;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.contacts-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-color);;
+    transition: color 0.3s ease;
+}
+
+.contacts-link:hover,
+.training-text:hover {
+    color: var(--accent);;
+}
+
+.contacts-link-type {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--primary-color);;
+    margin-right: 10px;
+    width: 15px;
+    display: inline-block;
+}
+
+.aside-container {
+    margin: 40px 40px 0;
+}
+
+.aside-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.aside-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--accent);
+    margin-left: 15px;
+}
+
+.aside-text {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.bio-occupation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 24px 0;
+    color: var(--black);
+}
+
+.bio-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--black);
+}
+
+.info-container {
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: var(--black);
+}
+
+.portfolio {
+    color: var(--primary-color);
+}
+
+.portfolio-link {
+    color: var(--accent);;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+}
+
+.portfolio-link::before,
+.company-name::before,
+.university::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--accent);;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+.portfolio-link:hover::before,
+.company-name:hover::before,
+.university:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.portfolio__item {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+.portfolio__stack {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    position: relative;
+    font-weight: 400;
+}
+
+.company-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.company-name,
+.accent-line {
+    color: var(--accent);;
+    position: relative;
+}
+
+.working-time {
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--light-gray);
+}
+
+.profession-duties {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.profession-duties-item {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.education {
+    list-style: none;
+}
+
+.education__item {
+    margin-bottom: 15px;
+}
+
+.university {
+    color: var(--accent);
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 15px 0 10px;
+}
+
+.university-description {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
